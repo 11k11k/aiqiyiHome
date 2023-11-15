@@ -1,0 +1,36 @@
+/* 重置默认样式 */
+body, h1, h2, h3, p, ul, ol, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, a, img, abbr, address, code, em, strong, small, sub, sup, b, i, u, hr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* 设置基础字体大小和行高 */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 移除列表元素的默认样式 */
+ul, ol,li {
+    list-style: none;
+}
+
+/* 移除链接的默认样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 移除按钮元素的默认样式 */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}

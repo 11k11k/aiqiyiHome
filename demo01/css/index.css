@@ -1,0 +1,393 @@
+.wrapper {
+    margin: 0 auto;
+
+    width: 1600px;
+    margin-left: 20px;
+    /* 左边空出20px，根据需要调整 */
+    margin-right: 20px;
+
+    /* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+body {
+    background-color: black;
+}
+
+.header {
+    height: 100px;
+    /* background-color: #fff; */
+    background-color: #18191f;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .wrapper {
+    display: flex;
+    padding-top: 37px;
+}
+
+.logo a {
+    display: block;
+    width: 131px;
+    height: 21px;
+    background-image: url(/image/logo透明.png);
+    font-size: 0;
+
+}
+
+.nav {
+    margin-left: 30px
+}
+
+.nav ul {
+    display: flex;
+
+
+}
+
+.nav ul li a {
+    /* color: #00cc4c; */
+    display: block;
+    padding: 0 12px;
+    line-height: 27px;
+    color: #f3f5f7;
+    font-size: 22px;
+
+}
+
+.nav ul li a img {
+    width: 28px;
+    height: 25px;
+}
+
+.nav ul li .home,
+.nav ul li .home:hover {
+    color: #00cc4c;
+}
+
+.nav ul li .gold {
+    color: #e2b987;
+}
+
+
+.search {
+    display: flex;
+    margin-left: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 212px;
+    height: 30px;
+    background-color: #4b4b50;
+    /* 设置背景颜色透明度 */
+    border-radius: 5px;
+
+}
+
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.search a {
+    align-self: center;
+    width: 31px;
+    height: 24px;
+    background-image: url(../image/搜索.png);
+    background-repeat: no-repeat;
+}
+
+.user {
+
+    margin-left: 32px;
+    margin-top: -20px;
+    ;
+}
+
+.user img {
+    transform: scale(0.8);
+    vertical-align: middle;
+    border-radius: 100px;
+}
+
+.banner {
+    height: 420px;
+    background-color: black;
+
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+/* .banner .wrapper .left {
+    margin-left: 51px;
+    width:1307px;
+    height: 420px;
+    background-image: url('/image/轮播图.png');
+    background-color: rgb(236, 172, 172);
+} */
+.banner .wrapper .left .carousel-container .carousel-wrapper .carousel-item{
+    position: relative;
+    margin-left: 51px;
+    width: 1307px;
+    height: 422px;
+    background-image: url('/image/轮播图.png');
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner .wrapper .left .carousel-container .carousel-wrapper .carousel-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.banner .wrapper .right {
+    position: absolute;
+    top: 116px;
+    left: 1234px;
+    width: 100px;
+    height: 420px;
+    background-color: rgba(52, 152, 219, 0);
+}
+
+.banner .left .right ul li a {
+    display: block;
+    font-size: 14px;
+    color: white;
+    height: 46px;
+    line-height: 46px;
+}
+
+.banner .left .right ul li a:hover {
+    font-size: 20px;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.8) -70%, rgba(255, 255, 255, 0) 40%);
+}
+
+.recommend {
+
+    height: 60px;
+    width: 1308px;
+    margin-left: 70px;
+    background-color: black;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+
+}
+
+.recommend h3 {
+    float: left;
+    color: white;
+    font-size: 26px;
+    margin-left: 20px;
+    line-height: 60px;
+}
+
+.recommend ul li a {
+    margin-left: 20px;
+    float: left;
+    color: white;
+    line-height: 60px;
+}
+
+.recommend ul li .poan {
+    color: #00cc4c;
+}
+
+.videoItem {
+    padding: 20px;
+    height: 600px;
+    width: 1308px;
+    margin-left: 70px;
+    background-color: black;
+}
+
+.videoItem .bd ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.videoItem .bd ul li {
+
+    width: 223px;
+    height: 223px;
+
+    overflow: hidden;
+}
+
+/* .bd li {
+    display: flex;
+    flex-direction: column;
+} */
+
+.bd li .pic {
+
+    height: 98px;
+}
+
+.bd li .pic img {
+    height: 124px;
+    border-radius: 13px;
+}
+
+.bd li .text {
+
+
+    color: white;
+
+}
+
+.bd li .text h4 {
+    font-size: 20px;
+}
+
+.bd li .text p span {
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+#footer a:hover {
+    background-color: #555;
+}
+
+#additional-links {
+    margin-top: 10px;
+}
+
+#additional-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+#additional-links a:hover {
+    text-decoration: underline;
+}
+
+.bd li {
+    transition: transform 0.3s ease;
+}
+
+/* 鼠标悬停时的样式 */
+.bd li:hover {
+    transform: scale(1.1);
+}
+
+
+.wrapper .left .carousel-container .carousel-wrapper .carousel-item img {
+    width: 1304px;
+    height: 422px;
+    overflow: hidden;
+}
+
+
+
+.carousel-container {
+    width: 1304px;
+    height: 422px;
+    overflow: hidden;
+
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 1304px;
+    box-sizing: border-box;
+
+}
+
+
+.carousel-container:hover .carousel-wrapper {
+    animation-play-state: paused;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    width: 33px;
+    /* 设置容器宽度 */
+    height: 33px;
+    /* 设置容器高度 */
+    bottom: 20px;
+    right: 20px;
+    background-image: url(/image/向下箭头.png);
+    background-repeat: no-repeat;
+    background-size: 34px 33px;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scaleY(-1);
+}
+
+/* Add your styles for the dropdown button and menu here */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
